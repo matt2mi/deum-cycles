@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResourcesComponent } from './resources/resources.component';
     ContactComponent,
     FooterComponent,
     MenuComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
