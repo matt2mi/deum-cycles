@@ -1,0 +1,10 @@
+.deum-logo-central {
+    width: 100%;
+    height: auto;
+    /* background-image: url("../../assets/logo-horizontal-4mm-blanc.png"); */
+}
+
+.home-central-body {
+    background-color: rgb(0 0 0 / 50%);
+    margin: 20px 0 20px 0;
+}
