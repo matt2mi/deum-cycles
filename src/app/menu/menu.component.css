@@ -1,0 +1,12 @@
+.text-center {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+}
