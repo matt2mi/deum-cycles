@@ -1,1 +1,6 @@
-<p>payment works!</p>
+<div class="pure-g">Stats</div>
+<div class="pure-g">
+    <div>Nombre de pages vues: {{ count$ | async }}</div>
+
+    <button (click)="reset()">Reset</button>
+</div>

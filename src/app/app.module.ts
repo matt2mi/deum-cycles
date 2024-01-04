@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { PaymentComponent } from './payment/payment.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counter.reducer';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { PaymentComponent } from './payment/payment.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({ count: counterReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

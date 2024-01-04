@@ -1,20 +1,30 @@
-<div class="pure-g text-center menu">
+<div *ngIf="!footerStyle" class="pure-g text-center menu">
     <div class="pure-u-1-6">
-        <p><a routerLink="/accueil">Accueil</a></p>
+        <p><a routerLink="/accueil" (click)="increment()">Accueil</a></p>
     </div>
     <div class="pure-u-1-6">
-        <p><a routerLink="/le-sur-mesure">Le sur mesure</a></p>
+        <p><a routerLink="/le-sur-mesure" (click)="increment()">Le sur mesure</a></p>
     </div>
     <div class="pure-u-1-6">
-        <p><a routerLink="/creations">Créations</a></p>
+        <p><a routerLink="/creations" (click)="increment()">Créations</a></p>
     </div>
     <div class="pure-u-1-6">
-        <p><a routerLink="/a-propos">À propos</a></p>
+        <p><a routerLink="/a-propos" (click)="increment()">À propos</a></p>
     </div>
     <div class="pure-u-1-6">
-        <p><a routerLink="/contact">Contact</a></p>
+        <p><a routerLink="/contact" (click)="increment()">Contact</a></p>
     </div>
     <div class="pure-u-1-6">
-        <p><a routerLink="/paiement">Paiement</a></p>
+        <p><a routerLink="/stats" (click)="increment()">Stats</a></p>
     </div>
+</div>
+<div *ngIf="footerStyle">
+    <ul>
+        <li><a routerLink="/accueil" (click)="increment()">Accueil</a></li>
+        <li><a routerLink="/le-sur-mesure" (click)="increment()">Le sur mesure</a></li>
+        <li><a routerLink="/creations" (click)="increment()">Créations</a></li>
+        <li><a routerLink="/a-propos" (click)="increment()">À propos</a></li>
+        <li><a routerLink="/contact" (click)="increment()">Contact</a></li>
+        <li><a routerLink="/stats" (click)="increment()">Stats</a></li>
+    </ul>
 </div>
